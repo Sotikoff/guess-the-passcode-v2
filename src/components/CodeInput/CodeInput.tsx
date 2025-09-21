@@ -3,9 +3,7 @@ import { codeInputSlice } from '@state/features';
 
 import './CodeInput.css';
 
-interface CodeInputProps { }
-
-export function CodeInput(props: CodeInputProps) {
+export function CodeInput() {
     const codeInput = useRootSelector(state => state.codeInput)
     const dispatch = useRootDispatch()
 
