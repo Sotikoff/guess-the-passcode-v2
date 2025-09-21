@@ -19,5 +19,13 @@ export default tseslint.config([
       ecmaVersion: 2020,
       globals: globals.browser,
     },
-  },
+    plugins: ["@typescript-eslint", "react", "import"],
+    settings: {
+      "import/resolver": {
+        typescript: {
+          alwaysTryTypes: true // This is important for resolving .ts and .tsx files
+        }
+      },
+    },
+  }
 ])
